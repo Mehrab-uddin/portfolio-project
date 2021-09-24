@@ -6,9 +6,10 @@ const About = () => {
   return (
     <section className='bg-white font-Poppins block'>
       <div className='block px-0 py-14'>
-        <h1 className='relative text-center text-5xl font-medium mb-12'>
+        <h1 className='relative text-center text-5xl font-medium mb-16'>
           About me
         </h1>
+
         <div className='flex flex-wrap items-center justify-between md:grid md:grid-cols-3 lg:px-5 '>
           <div className=' overflow-hidden mb-10 md:col-span-1 '>
             <Image
@@ -21,7 +22,7 @@ const About = () => {
           </div>
           <div className='md:col-span-2 md:px-5'>
             <div className='text-xl font-semibold font-Poppins p-2'>
-              I'm Mehrab Uddin and I'm a <br />{" "}
+              My name is Mehrab Uddin and I'm a <br />{" "}
               <span className='text-secondary text-bold'>Web Developer</span>
             </div>
             <p className='py-2 mb-10 text-lg text-justify leading-relaxed font-light'>

@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         secondary: "#dc143c",
         crimson: "#ed143d",
+        customBlack: "#111",
+        cardBlack: "#222",
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif", "sans"],

@@ -20,22 +20,22 @@ const Header = () => {
             <HeaderItems title='HOME' Icon={HomeIcon} />
           </a>
         </Link>
-        <Link href='/about'>
+        <Link href='#about'>
           <a>
             <HeaderItems title='ABOUT' Icon={UserIcon} />{" "}
           </a>
         </Link>
-        <Link href='/services'>
+        <Link href='#services'>
           <a>
             <HeaderItems title='SERVICES' Icon={BadgeCheckIcon} />
           </a>
         </Link>
-        <Link href='/portfolio'>
+        <Link href='#portfolio'>
           <a>
             <HeaderItems title='PORTFOLIO' Icon={CollectionIcon} />
           </a>
         </Link>
-        <Link href='/contact'>
+        <Link href='#contact'>
           <a>
             <HeaderItems title='CONTACT' Icon={SearchIcon} />
           </a>
