@@ -1,33 +1,28 @@
 import About from "../components/about";
 import Services from "../components/services";
 import Contact from "../components/contact";
+import Button from "../components/Button";
+import { SiKubernetes, SiDocker, SiLinux } from "react-icons/si";
+import { FaPaintBrush } from "react-icons/fa";
+import Portfolio from "../components/portfolio";
 
+const data = [
+  {
+    title: "web development",
+    // image: "/branding.jpeg",
+    discription: "some discription",
+  },
+  {
+    title: "kubernetes Administration",
+    discription: "some discription k8s",
+  },
+  {
+    title: "Linux Administration",
+    discription: "some discription linux",
+  },
+];
 export default function Index() {
-  const data = [
-    {
-      title: "Web Developmet",
-      id: 1,
-      image:
-        "https://mechomotive.com/wp-content/uploads/2021/08/Artificial-Intelligence-5.jpg",
-
-      discription: "A discription ",
-    },
-    {
-      title: "Mobile App Developmet",
-      id: 2,
-      image:
-        "https://mechomotive.com/wp-content/uploads/2021/08/Artificial-Intelligence-5.jpg",
-
-      discription: "Mobile App discription ",
-    },
-    {
-      title: "Web Developmet UI/UX",
-      id: 3,
-      image:
-        "https://mechomotive.com/wp-content/uploads/2021/08/Artificial-Intelligence-5.jpg",
-      discription: "A discription UI/UX ",
-    },
-  ];
+  // console.log(data, "data");
   return (
     <section>
       {/* BANNER Section */}
@@ -46,7 +41,7 @@ export default function Index() {
               Mehrab Uddin,
             </h1>
           </div>
-          <div className='text-2xl font-light '>
+          <div className='text-2xl font-light pb-5 '>
             <p>
               & I'm a{" "}
               <span className='text-3xl text-secondary font-semibold'>
@@ -54,6 +49,7 @@ export default function Index() {
               </span>
             </p>
           </div>
+          <Button />
         </section>
       </div>
       {/* ABOUT ME Section */}
@@ -63,60 +59,41 @@ export default function Index() {
       {/* SERVICES Section */}
       <section
         id='services'
-        className='bg-customBlack w-full h-full block mb-1 text-gray-200 font-Poppins text-center'
+        className='bg-customBlack block text-gray-200 font-Poppins text-center pt-14 pb-32 px-4'
       >
-        <h1 className='text-5xl py-20'>My Services</h1>
-        <div className='grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-3 items-center pb-32'>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
+        <h1 className='text-5xl py-16'>Services</h1>
+        <div className=' flex flex-col flex-wrap items-center justify-center md:grid md:grid-cols-2 gap-x-4 lg:grid-cols-3'>
+          <Services
+            className=''
+            title='web Development'
+            Icon={FaPaintBrush}
+            description='Professional website developement in latest technologies'
+          />
+
+          <Services
+            title='K8S Administration'
+            Icon={SiKubernetes}
+            description='Professional website developement in latest technologies'
+          />
+
+          <Services
+            title='Microservices'
+            Icon={SiDocker}
+            description='Professional website developement in latest technologies'
+          />
         </div>
       </section>
 
       {/* PORTFOLIO Section */}
       <section
         id='portfolio'
-        className='bg-gray-200 w-full h-full block mb-1 text-bases font-Poppins text-center'
+        className=' bg-white block text-gray-900 font-Poppins text-center pt-14 pb-32 px-4'
       >
-        <h1 className='text-5xl py-20'>Portfolio</h1>
-        <div className='grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-3 items-center pb-32'>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-          <div className='mx-5 '>
-            <Services />
-          </div>
-        </div>
+        <h1 className='text-5xl font-semibold py-10'>Portfolio</h1>
+        <Portfolio />
       </section>
       {/* CONTECT Section */}
-      <section id='contact'>
+      <section id='contact' className='bg-customBlack'>
         <Contact />
       </section>
     </section>

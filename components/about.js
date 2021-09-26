@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import profilepic from "../public/profilepic.jpg";
+import profilepic from "../public/images/profilepic.jpg";
 
 const About = () => {
   return (
@@ -22,8 +22,8 @@ const About = () => {
           </div>
           <div className='md:col-span-2 md:px-5'>
             <div className='text-xl font-semibold font-Poppins p-2'>
-              My name is Mehrab Uddin and I'm a <br />{" "}
-              <span className='text-secondary text-bold'>Web Developer</span>
+              General overview as
+              <br /> <span className='text-secondary text-bold'>Developer</span>
             </div>
             <p className='py-2 mb-10 text-lg text-justify leading-relaxed font-light'>
               I am Software Engineer and a Web/Apps developer able to build a
@@ -35,7 +35,7 @@ const About = () => {
               tools.
             </p>
             <Link href='/resume.pdf' className=''>
-              <a className='bg-secondary text-semibold text-white border-4 border-crimson px-3 py-2 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125 '>
+              <a className='bg-secondary font-semibold text-white border-4 border-crimson px-3 py-4 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125 '>
                 Download Resume
               </a>
             </Link>

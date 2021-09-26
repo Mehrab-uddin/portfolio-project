@@ -3,9 +3,8 @@ import {
   BadgeCheckIcon,
   CollectionIcon,
   HomeIcon,
-  LightningBoltIcon,
-  SearchIcon,
   UserIcon,
+  QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
 
 import HeaderItems from "./headerItems";
@@ -13,7 +12,7 @@ import HeaderItems from "./headerItems";
 const Header = () => {
   return (
     <header className=' flex flex-col fixed inset-x-0 z-10 bg-gray-900 sm:flex-row p-1 justify-between items-center max-h-28 font-Poppins text-gray-200'>
-      <h1 className='text-2xl lg:ml-10 font-bold'>MEHRAB_CODE</h1>
+      <h1 className='text-2xl lg:ml-10 font-bold'>TURABI CODE</h1>
       <div className='flex flex-grow justify-evenly max-w-2xl mt-3'>
         <Link href='/'>
           <a>
@@ -22,7 +21,7 @@ const Header = () => {
         </Link>
         <Link href='#about'>
           <a>
-            <HeaderItems title='ABOUT' Icon={UserIcon} />{" "}
+            <HeaderItems title='ABOUT' Icon={QuestionMarkCircleIcon} />{" "}
           </a>
         </Link>
         <Link href='#services'>
@@ -37,7 +36,7 @@ const Header = () => {
         </Link>
         <Link href='#contact'>
           <a>
-            <HeaderItems title='CONTACT' Icon={SearchIcon} />
+            <HeaderItems title='CONTACT' Icon={UserIcon} />
           </a>
         </Link>
       </div>

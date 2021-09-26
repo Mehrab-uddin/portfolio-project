@@ -13,3 +13,6 @@
 /* .hero {
   background-image: url("../public/laptop.jpg");
 } */
+html {
+  scroll-behavior: smooth;
+}
