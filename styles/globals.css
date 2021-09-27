@@ -6,13 +6,10 @@
 
 @layer base {
   body {
-    /* @apply bg-[#f4f4f4] text-gray-300; */
     font-family: "font-Poppins", "font-serif";
   }
 }
-/* .hero {
-  background-image: url("../public/laptop.jpg");
-} */
+
 html {
   scroll-behavior: smooth;
 }
