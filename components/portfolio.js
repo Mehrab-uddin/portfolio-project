@@ -11,7 +11,7 @@ const Portfolio = () => {
       id: 2,
       title: "Meetups App",
       image: "/images/meetups.png",
-      discription: "ReactJS app for Meetups app, ReactJS and Tailwind CSS..",
+      discription: "ReactJS app for Meetups, ReactJS and Tailwind CSS ...",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Portfolio = () => {
       title: "Huddle Web",
       image: "/images/huddle-landing-page.png",
       discription:
-        "Huddle website front end design, ReactJS and Tailwind CSS ..",
+        "Huddle website front end design, ReactJS and Tailwind CSS ...",
     },
     {
       id: 5,

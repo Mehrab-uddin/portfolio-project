@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function Contact() {
   return (
     <div className='border-t-2 pt-24 pb-32 font-Poppins text-gray-200'>
@@ -6,7 +8,7 @@ export default function Contact() {
       </h1>
       <div class='flex flex-col  px-4 md:flex-row'>
         <div class='px-6 pb-10 block'>
-          <h1 class='text-2xl font-semibold p-5'>Personal info</h1>
+          <h1 class='text-2xl font-semibold p-5'>Contact info</h1>
           <div class='flex space-x-4'>
             <p class='mt-2 text-red-500'>
               <svg
@@ -85,7 +87,7 @@ export default function Contact() {
                 {" "}
                 Email <br />{" "}
               </span>
-              mehrab.uddin@gmail.com
+              mehrab.uddin905@gmail.com
             </h3>
           </div>
         </div>
@@ -125,7 +127,7 @@ export default function Contact() {
               placeholder='Subject'
             />
           </div>
-          <div>
+          <div className='pb-5'>
             <label for='email'>Message</label>
             <textarea
               class='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
@@ -136,6 +138,7 @@ export default function Contact() {
               placeholder='Text me here ...'
             ></textarea>
           </div>
+          <Button title='Submit' />
         </form>
       </div>
     </div>

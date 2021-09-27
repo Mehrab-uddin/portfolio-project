@@ -49,7 +49,7 @@ export default function Index() {
               </span>
             </p>
           </div>
-          <Button />
+          <Button title='Hire me' />
         </section>
       </div>
       {/* ABOUT ME Section */}
@@ -64,22 +64,21 @@ export default function Index() {
         <h1 className='text-5xl py-16'>Services</h1>
         <div className=' flex flex-col flex-wrap items-center justify-center md:grid md:grid-cols-2 gap-x-4 lg:grid-cols-3'>
           <Services
-            className=''
             title='web Development'
             Icon={FaPaintBrush}
-            description='Professional website developement in latest technologies'
+            description='Professional website developement in latest technologies, ReactJS, NextJS, Tailwind CSS, NodeJS ...'
           />
 
           <Services
             title='K8S Administration'
             Icon={SiKubernetes}
-            description='Professional website developement in latest technologies'
+            description='Certified Kubernetes Administrator  (CKA), Six months of experience as Kubernetes Administrator ...'
           />
 
           <Services
-            title='Microservices'
+            title='Linux/Docker'
             Icon={SiDocker}
-            description='Professional website developement in latest technologies'
+            description='Experience in Linux and Docker containerization, package applications in containers ...'
           />
         </div>
       </section>
