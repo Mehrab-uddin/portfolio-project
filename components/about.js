@@ -34,7 +34,7 @@ const About = () => {
               proficient in an array of scripting languages and multimedia Web
               tools.
             </p>
-            <Link href='/resume.pdf' className=''>
+            <Link href='/resume.pdf'>
               <a className='bg-secondary font-semibold text-white border-4 border-crimson px-3 py-4 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125 '>
                 Download Resume
               </a>

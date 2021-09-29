@@ -6,14 +6,14 @@ export default function Contact() {
       <h1 className='text-center text-5xl py-5 pb-20 font-semibold'>
         Contact me
       </h1>
-      <div class='flex flex-col  px-4 md:flex-row'>
-        <div class='px-6 pb-10 block'>
-          <h1 class='text-2xl font-semibold p-5'>Contact info</h1>
-          <div class='flex space-x-4'>
-            <p class='mt-2 text-red-500'>
+      <div className='flex flex-col  px-4 md:flex-row'>
+        <div className='px-6 pb-10 block'>
+          <h1 className='text-2xl font-semibold p-5'>Contact info</h1>
+          <div className='flex space-x-4'>
+            <p className='mt-2 text-red-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                class='h-8 w-8'
+                className='h-8 w-8'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -27,18 +27,18 @@ export default function Contact() {
               </svg>
             </p>
             <h3>
-              <span class='font-semibold'>
+              <span className='font-semibold'>
                 {" "}
                 Name <br />{" "}
               </span>
               Mehrab Uddin
             </h3>
           </div>
-          <div class='flex space-x-4'>
-            <p class='mt-2 text-red-500'>
+          <div className='flex space-x-4'>
+            <p className='mt-2 text-red-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                class='h-8 w-8'
+                className='h-8 w-8'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -58,18 +58,18 @@ export default function Contact() {
               </svg>
             </p>
             <h3>
-              <span class='font-semibold'>
+              <span className='font-semibold'>
                 {" "}
                 Address <br />{" "}
               </span>
               Islamabad, Rawalpindi
             </h3>
           </div>
-          <div class='flex space-x-4'>
-            <p class='mt-2 text-red-500'>
+          <div className='flex space-x-4'>
+            <div className='mt-2 text-red-500'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                class='h-8 w-8'
+                className='h-8 w-8'
                 fill='none'
                 viewBox='0 0 24 24'
                 stroke='currentColor'
@@ -81,37 +81,36 @@ export default function Contact() {
                   d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
                 />
               </svg>
-            </p>
+            </div>
             <h3>
-              <span class='font-semibold'>
-                {" "}
-                Email <br />{" "}
+              <span className='font-semibold'>
+                Email <br />
               </span>
               mehrab.uddin905@gmail.com
             </h3>
           </div>
         </div>
-        <form class='px-4 my-5S max-w-3xl mx-auto space-y-6'>
+        <form className='px-4 my-5S max-w-3xl mx-auto space-y-6'>
           <div>
-            <h1 class='text-3xl font-semibold'>Get in touch</h1>
-            <p class='text-sm font-light'>
-              Drop me a message, I'll get to you soon
+            <h1 className='text-3xl font-semibold'>Get in touch</h1>
+            <p className='text-sm font-light'>
+              Drop me a message, I'llName get to you soon
             </p>
           </div>
-          <div class='flex flex-col lg:flex-row lg:space-x-4'>
-            <div class='w-full'>
-              <label for='firstname'>Name</label>
+          <div className='flex flex-col lg:flex-row lg:space-x-4'>
+            <div className='w-full'>
+              <label>Name</label>
               <input
-                class='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
+                className='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
                 type='text'
                 id='firstname'
                 placeholder='Full name'
               />
             </div>
-            <div class='w-full'>
-              <label for='email'>Email</label>
+            <div className='w-full'>
+              <label>Email</label>
               <input
-                class='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
+                className='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
                 type='email'
                 id='email'
                 placeholder='Email'
@@ -119,18 +118,18 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label for='lastname'>Subject</label>
+            <label>Subject</label>
             <input
-              class='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
+              className='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
               type='text'
               id='lastname'
               placeholder='Subject'
             />
           </div>
           <div className='pb-5'>
-            <label for='email'>Message</label>
+            <label>Message</label>
             <textarea
-              class='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
+              className='block border border-gray-400 py-2 px-4 w-full focus:outline-none rounded focus:border-secondary text-black'
               name='message'
               id='message'
               cols='5'

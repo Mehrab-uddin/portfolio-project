@@ -33,7 +33,7 @@ const Portfolio = () => {
       discription: "ReactJS and Tailwind CSS ...",
     },
     {
-      id: 5,
+      id: 6,
       title: "Google Clone",
       image: "/images/google.png",
       discription: "ReactJS and Tailwind CSS ...",
@@ -42,8 +42,9 @@ const Portfolio = () => {
 
   return (
     <div className='flex flex-col w-full md:grid grid-cols-2 lg:grid-cols-3'>
-      {portfolio_data.map((item) => (
+      {portfolio_data.map((item, index) => (
         <div
+          key={index}
           className='border-4 cursor-pointer border-gray-200 shadow-md m-2 text-left rounded-lg overflow-hidden bg-gray-200 p-5
          hover:border-secondary hover:bg-gray-100 transition-all hover:scale-105 transform duration-500 hover:ease-out'
         >
