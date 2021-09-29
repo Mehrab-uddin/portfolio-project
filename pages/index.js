@@ -1,3 +1,4 @@
+/*eslint-disable react/no-unescaped-entities*/
 import About from "../components/about";
 import Services from "../components/services";
 import Contact from "../components/contact";

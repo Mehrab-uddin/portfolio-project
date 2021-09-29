@@ -53,6 +53,7 @@ const Portfolio = () => {
             src={item.image}
             width={300}
             height={200}
+            alt='huddle landing page'
           />
           <h2 className='pl-2 pt-5 font-semibold'>{item.title}</h2>
           <p className='px-2'>{item.discription}</p>
