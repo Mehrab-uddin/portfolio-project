@@ -95,7 +95,7 @@ export default function Contact() {
           <div>
             <h1 className='text-3xl font-semibold'>Get in touch</h1>
             <p className='text-sm font-light'>
-              Drop me a message, I'llName get to you soon
+              Drop me a message, I'll get to you soon
             </p>
           </div>
           <div className='flex flex-col lg:flex-row lg:space-x-4'>
