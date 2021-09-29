@@ -1,5 +1,6 @@
+/*eslint-disable react/no-unknown-property*/
+/* eslint-disable react/no-unescaped-entities*/
 import Button from "./Button";
-
 export default function Contact() {
   return (
     <div className='border-t-2 pt-24 pb-32 font-Poppins text-gray-200'>
