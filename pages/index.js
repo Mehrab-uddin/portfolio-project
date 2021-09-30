@@ -3,10 +3,11 @@ import About from "../components/about";
 import Services from "../components/services";
 import Contact from "../components/contact";
 import Button from "../components/Button";
-import { SiKubernetes, SiDocker, SiLinux } from "react-icons/si";
+import { SiKubernetes, SiDocker } from "react-icons/si";
 import { FaPaintBrush } from "react-icons/fa";
 import Portfolio from "../components/portfolio";
 import TextLoop from "react-text-loop";
+import Head from "next/head";
 
 const data = [
   {
@@ -26,6 +27,9 @@ export default function Index() {
   // console.log(data, "data");
   return (
     <section>
+      <Head>
+        <title>Mehrab Uddin</title>
+      </Head>
       {/* BANNER Section */}
       <div
         className='bg-hero w-full h-screen bg-no-repeat flex items-center justify-center
