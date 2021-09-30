@@ -1,31 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 import profilepic from "../public/images/profilepic.jpg";
+import TextLoop from "react-text-loop";
 
 const About = () => {
   return (
     <section className='bg-white font-Poppins block'>
-      <div className='block px-0 py-14'>
+      <div className='block px-0 mt-10 md:mt-16'>
         <h1 className='relative text-center text-5xl font-medium mb-16'>
           About me
         </h1>
 
-        <div className='flex flex-wrap items-center justify-between md:grid md:grid-cols-3 lg:px-5 '>
-          <div className=' overflow-hidden mb-10 md:col-span-1 '>
+        <div className='flex flex-wrap items-center justify-between px-2 md:flex-row '>
+          <div className=''>
             <Image
               src={profilepic}
               alt='Picture of the author'
-              width={400}
-              height={400}
-              className='bg-cover rounded-xl shadow-2xl sm:ml-5'
+              width={350}
+              height={350}
+              className='bg-cover rounded'
             />
           </div>
-          <div className='md:col-span-2 md:px-5'>
+          <div className='mb-10'>
             <div className='text-xl font-semibold font-Poppins p-2'>
               General overview as
-              <br /> <span className='text-secondary text-bold'>Developer</span>
+              <br />{" "}
+              <TextLoop>
+                <span className='text-secondary text-bold'>Developer</span>
+                <span className='text-secondary text-bold'>Freelancer</span>
+              </TextLoop>
             </div>
-            <p className='py-2 mb-10 text-lg text-justify leading-relaxed font-light'>
+            <p className='max-w-lg lg:max-w-2xl py-2 mb-8 text-lg text-justify leading-relaxed font-light'>
               I am Software Engineer and a Web/Apps developer able to build a
               Web presence from the ground up - from concept, navigation, layout
               and programming to UX and SEO. Skilled at writing well-designed,
@@ -35,7 +40,7 @@ const About = () => {
               tools.
             </p>
             <Link href='/resume.pdf'>
-              <a className='bg-secondary font-semibold text-white border-4 border-crimson px-3 py-4 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125 '>
+              <a target='_blank' className='btn-resume'>
                 Download Resume
               </a>
             </Link>

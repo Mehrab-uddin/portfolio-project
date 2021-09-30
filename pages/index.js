@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import { SiKubernetes, SiDocker, SiLinux } from "react-icons/si";
 import { FaPaintBrush } from "react-icons/fa";
 import Portfolio from "../components/portfolio";
+import TextLoop from "react-text-loop";
 
 const data = [
   {
@@ -42,12 +43,20 @@ export default function Index() {
               Mehrab Uddin,
             </h1>
           </div>
-          <div className='text-2xl font-light pb-5 '>
+          <div className='text-2xl md:text-3xl lg:text-5xl  font-light pb-5 '>
             <p>
               & I'm a{" "}
-              <span className='text-3xl text-secondary font-semibold'>
-                Web Developer
-              </span>
+              <TextLoop>
+                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
+                  Web Developer
+                </span>
+                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
+                  Freelancer
+                </span>
+                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
+                  Software Engineer
+                </span>
+              </TextLoop>
             </p>
           </div>
           <Button title='Hire me' />
@@ -63,7 +72,7 @@ export default function Index() {
         className='bg-customBlack block text-gray-200 font-Poppins text-center pt-14 pb-32 px-4'
       >
         <h1 className='text-5xl py-16'>Services</h1>
-        <div className=' flex flex-col flex-wrap items-center justify-center md:grid md:grid-cols-2 gap-x-4 lg:grid-cols-3'>
+        <div className=' flex flex-col flex-wrap items-center justify-center md:flex-row gap-x-3'>
           <Services
             title='web Development'
             Icon={FaPaintBrush}
