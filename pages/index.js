@@ -11,7 +11,6 @@ import TextLoop from "react-text-loop";
 const data = [
   {
     title: "web development",
-    // image: "/branding.jpeg",
     discription: "some discription",
   },
   {
@@ -39,22 +38,22 @@ export default function Index() {
             </span>
           </div>
           <div>
-            <h1 className=' text-4xl md:text-5xl lg:text-7xl font-bold'>
+            <h1 className=' text-3xl md:text-5xl lg:text-7xl font-bold'>
               Mehrab Uddin,
             </h1>
           </div>
-          <div className='text-2xl md:text-3xl lg:text-5xl  font-light pb-5 '>
-            <p>
+          <div className='font-pb-5 '>
+            <p className='text-2xl'>
               & I'm a{" "}
               <TextLoop>
-                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
+                <span className='text-2xl md:text-3xl lg:text-4xl text-secondary font-bold'>
                   Web Developer
                 </span>
-                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
+                <span className='text-2xl md:text-3xl lg:text-4xl text-secondary font-bold'>
                   Freelancer
                 </span>
-                <span className='text-3xl md:text-4xl lg:text-5xl text-secondary font-semibold'>
-                  Software Engineer
+                <span className='text-2xl md:text-3xl lg:text-4xl text-secondary font-bold'>
+                  App Developer
                 </span>
               </TextLoop>
             </p>
@@ -63,7 +62,7 @@ export default function Index() {
         </section>
       </div>
       {/* ABOUT ME Section */}
-      <section id='about' className='p-5 block'>
+      <section id='about' className='  p-5 block'>
         <About />
       </section>
       {/* SERVICES Section */}

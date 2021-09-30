@@ -11,7 +11,7 @@
   , */
   @layer components {
     .btn-resume {
-      @apply bg-secondary font-semibold text-white border-4 border-crimson px-3 py-4 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125;
+      @apply bg-secondary font-semibold text-white border-4 border-crimson px-4 py-3 rounded-md hover:text-secondary hover:bg-gray-200 transition duration-700 ease-out transform scale-125;
     }
   }
 
