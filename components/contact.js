@@ -8,7 +8,7 @@ export default function Contact() {
         Contact me
       </h1>
       <div className='flex flex-col  px-4 md:flex-row'>
-        <div className='px-6 pb-10 block'>
+        <div className='px-6 lg:px-20 pb-10 block'>
           <h1 className='text-2xl font-semibold p-5'>Contact info</h1>
           <div className='flex space-x-4'>
             <p className='mt-2 text-red-500'>
@@ -91,11 +91,11 @@ export default function Contact() {
             </h3>
           </div>
         </div>
-        <form className='px-4 my-5S max-w-3xl mx-auto space-y-6'>
+        <form className='px-4 my-5S max-w-xl mx-auto space-y-6'>
           <div>
             <h1 className='text-3xl font-semibold'>Get in touch</h1>
             <p className='text-sm font-light'>
-              Drop me a message, I'llName get to you soon
+              Drop me a message, I'll get to you soon
             </p>
           </div>
           <div className='flex flex-col lg:flex-row lg:space-x-4'>
