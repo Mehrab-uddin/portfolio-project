@@ -38,7 +38,7 @@ const About = () => {
                 player who is proficient in an array of scripting languages and
                 multimedia Web tools.
               </p>
-              <Link href='/resume.pdf'>
+              <Link href='/assets/mehrab-uddin.pdf'>
                 <a target='_blank' className='btn-resume'>
                   Download Resume
                 </a>
